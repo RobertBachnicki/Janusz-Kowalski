@@ -1,0 +1,47 @@
+/* typography */
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-size: 6.4rem;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 5.2rem;
+  line-height: 110%;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.7rem;
+  color: #666666;
+}
+
+a {
+  font-size: 1.65rem;
+}

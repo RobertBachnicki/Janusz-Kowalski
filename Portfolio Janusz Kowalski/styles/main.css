@@ -1,0 +1,437 @@
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn,
+input[type="submit"] {
+  background-color: #3371f2;
+  border-radius: 0.8rem;
+  padding: 16px 24px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn:hover,
+input[type="submit"]:hover {
+  background-color: #164fc6;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 60px;
+}
+
+.nav_list {
+  list-style: none;
+}
+
+.nav_list li {
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.nav_list li a {
+  color: #000;
+  font-weight: 700;
+}
+
+a.nav_link.active {
+  color: #3371f2;
+}
+
+/* main */
+main {
+  padding: 0 2vw;
+  height: auto;
+}
+
+/* section home */
+section#home.home {
+  padding: 40px;
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;*/
+  height: fit-content;
+}
+
+.home_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 1.5rem;
+}
+
+.home_block {
+  display: inline-block;
+}
+
+.home_block h1 {
+  font-weight: 700;
+}
+
+.home_block p {
+  padding: 20px 0;
+}
+
+.home_block2 img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(75%);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  display: inline-block;
+}
+
+/*section about*/
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: fit-content;
+  padding: 40px;
+}
+
+.about_left {
+  padding: 10px;
+  width: 100%;
+}
+
+.about_right {
+  padding: 10px;
+  text-align: left;
+  line-height: 1.6;
+  width: 100%;
+}
+
+/*section projects*/
+.projects {
+  height: fit-content;
+  padding: 40px;
+}
+
+.projects_opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.projects_opening h2 {
+  padding: 20px;
+  margin-bottom: 30px;
+  word-spacing: 5px;
+}
+
+.projects_opening li {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.projects_opening li a {
+  padding: 5px 15px;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.projects_opening li .active {
+  color: #164fc6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.grid_item {
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid_item img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /*width: 42vw;
+  height: 65vh;*/
+
+  overflow: hidden;
+  filter: brightness(75%);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+div.info {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transform: translateY(-100%);
+
+  /*
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 1;*/
+}
+
+div.info h5 {
+  position: absolute;
+  top: 2rem;
+  left: 5px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-bottom: 13px;
+  z-index: 10;
+}
+
+div.info h4 {
+  position: absolute;
+  top: 6rem;
+  left: 5px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 2px;
+  z-index: 3;
+}
+
+div.info button.btn {
+  position: absolute;
+  /*top: 0px;*/
+  transform: translateY(45%);
+  left: 5px;
+  z-index: 10;
+}
+
+div.info .btn:hover {
+  cursor: pointer;
+}
+
+div.middle {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.middle .btn:hover {
+  cursor: pointer;
+}
+
+/*section education*/
+.education {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 40px;
+  height: fit-content;
+}
+
+.education_left {
+  width: auto;
+}
+
+.education_right ul {
+  padding: 0 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.education_right ul li {
+  list-style-type: disc !important;
+  font-size: 50px;
+  color: rgb(90, 35, 87);
+}
+
+.education_right ul li h3 {
+  padding-top: 15px;
+}
+
+.education_right ul p {
+  padding-top: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/*section contact*/
+.contact {
+  height: fit-content;
+  padding: 40px;
+}
+
+.one {
+  text-align: left;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.personalInfo {
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.personalInfo legend {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 25px 0;
+}
+
+label {
+  font-weight: 700;
+  margin-right: 30px;
+  font-size: 16px;
+}
+
+.personalInfo label {
+  margin-right: auto;
+  width: auto;
+}
+
+.subject {
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject legend {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 25px 0;
+}
+
+.subject label {
+  margin-left: 0px;
+  justify-content: start;
+}
+
+.subject label span {
+  padding-left: 15px;
+  line-height: 1.7;
+}
+
+.message {
+  border-color: transparent;
+}
+
+.message legend {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 25px 0;
+}
+
+.message textarea {
+  border: 2px solid rgb(90, 35, 87);
+  border-radius: 10px;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 18vw;
+  margin: 10px 0px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+
+input[type="radio"] {
+  color: #3371f2;
+}
+
+/*footer*/
+footer .top {
+  height: fit-content;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 2fr 2.5fr 2.5fr;
+  gap: 10px;
+}
+
+footer div {
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 60px;
+}
+
+.f_left ul li,
+.f_socials ul li {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 0.5rem;
+  transition: all ease-in-out;
+}
+
+.f_left ul li:hover,
+.f_socials ul li:hover {
+  cursor: pointer;
+}
+
+.f_left ul li a,
+.f_socials ul li a {
+  color: #000;
+  font-weight: 600;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.f_left ul li a:visited,
+.f_socials ul li a:visited {
+  color: #000;
+}
+
+.bottom h5 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+}
